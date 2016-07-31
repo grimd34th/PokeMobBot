@@ -1,0 +1,6 @@
+language: csharp
+solution: PokeMobBot.sln
+install:
+  - nuget restore PokeMobBot.sln
+script:
+  - xbuild /p:Configuration=Release PokeMobBot.sln
