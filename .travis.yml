@@ -1,8 +1,9 @@
 language: csharp
+cache: ccache
 solution: PokeMobBot.sln
 mono:
   - latest
 install:
   - nuget restore PokeMobBot.sln
 script:
-  - xbuild /p:Configuration=Release PokeMobBot.sln
+  - xbuild PokeMobBot.sln
