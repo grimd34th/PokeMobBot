@@ -3,4 +3,6 @@ solution: PokeMobBot.sln
 install:
   - nuget restore PokeMobBot.sln
 script:
+  - git submodule init
+  - git submodule update
   - xbuild /p:Configuration=Release PokeMobBot.sln
